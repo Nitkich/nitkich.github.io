@@ -1,0 +1,4 @@
+.hero {
+    background: center / cover no-repeat url(../Images/background_4.jpg), var(--mask);
+    background-blend-mode: overlay;
+}
