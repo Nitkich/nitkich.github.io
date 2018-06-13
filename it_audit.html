@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SD-Service</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/it_audit.css">
+    <link rel="stylesheet" href="./Styles/slider.css">
+	<link rel="icon" type="image/png" href="./Images/logocompany16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./Images/logocompany32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./Images/logocompany.png" sizes="96x96">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">SDService</h1>
+        <div class="header__button" id="toggle">
+            <svg viewBox="0 0 100 100">
+                <g fill="#fff">
+                    <circle cx="50" cy="25" r="5" />
+                    <circle cx="50" cy="50" r="5" />
+                    <circle cx="50" cy="75" r="5" />
+                </g>
+            </svg>
+        </div>
+        <nav class="header__nav nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="#" class="nav__link" data-id="contacts">Контакты</a>
+        </nav>
+    </header>
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__title">IT - аудит</h1>
+            <div class="hero__content">Выявим возможные проблемы и предоставим список рекомендаций</div>
+            <button class="hero__button button" data-id="feedback">
+                <span class="button__gradient">Связаться</span>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__group">
+            <h1 class="content__title">Минимизируем внезапные расходы, максимизируем эффективность бизнеса: IT аудит</h1>
+            <div class="content__text">
+			<p>Информационная система и технологическая структура предприятия напрямую влияют на эффективность бизнеса, возможные затраты на оборудование и утечки важных корпоративных сведений. Отсюда необходимость в периодической проверке систем на соответствие нормам безопасности и эффективности, регулярном обслуживании и оптимизации оборудования по мере роста бизнеса.</p>
+			<div class="content__text_primary">
+			<p>Компания SD-Service предлагает комплексные услуги по IT - аудиту: оценим риски, связанные с нынешним оборудованием и ПО на предприятии, выдадим рекомендации по их устранению.</p>
+			<p>Предлагаем аудит в четырех направлениях: информационные системы, технологическая инфраструктура, информационная безопасность и IT-подразделения.</p>
+			</div>
+			</div>
+        </div>
+        <div class="content__group">
+            <h1 class="content__title">Для чего необходим IT-аудит:</h1>
+            <div class="content__text">
+                <ul class="content__list">
+                    <li>Определить эффективность и рентабельность IT-сферы компании;</li>
+                    <li>Выявить и проанализировать проблемы в ИТ-инфраструктуре предприятия;</li>
+                    <li>Определить уровень информационной безопасности и возможные источники утечек;</li>
+                    <li>Создать резервные копии баз данных и электронной почты;</li>
+                    <li>Минимизировать риск утечки конфиденциальной информации;</li>
+                    <li>Подобрать наиболее эффективное оборудование;</li>
+                    <li>Оптимизировать затраты.</li>
+                </ul>
+            <p>В итоге владелец предприятия сможет проанализировать полученные данные и принять соответствующие меры: сменить оборудование, устранить проблемные места и оптимизировать ПО, обеспечить возможность для расширения бизнеса с минимальными затратами.</p>
+			<p class="content__text_primary">Интересный факт: средний срок проведения аудита варьируется в пределах 2 дней – 2 недель в зависимости от развитости компании и масштабности инфраструктуры.</p>
+            </div>
+        </div>
+        <div class="content__group">
+            <h1 class="content__title">IT-аудит от SD-Service:</h1>
+            <div class="content__text">
+                <ul class="content__list">
+                    <li>Это гарант минимального риска утечки важной информации;</li>
+                    <li>Это минимум расходов на IT-технологии как по аппаратной, так и информационной частях;</li>
+                    <li>Это максимальная эффективность вашего бизнеса с точки зрения современных технологий – программного обеспечения и компьютерного оборудования.</li>
+                </ul>
+			<p>Повысьте качество функционирования IT-системы на предприятии и повысьте ее безопасность – закажите IT - аудит в компании SD-Service!</p>
+            </div>
+        </div>
+    </div>
+    <div class="feedback" id="feedback">
+        <h1 class="feedback__title">Получите бесплатную консультацию по услугам</h1>
+        <div class="feedback__description">Оставьте свои контактные данные и мы свяжемся с вами</div>
+        <form action="http://127.0.0.1:8080/" method="POST" class="feedback__form form">
+            <div class="form__group">
+                <input type="text" name="firstname" class="form__input" maxlength="50" placeholder="Имя *" required>
+                <input type="email" name="email" class="form__input" maxlength="50" placeholder="Почта">
+                <input type="text" name="organization_name" class="form__input" maxlength="50" placeholder="Название организации *" required>
+                <input type="tel" name="tel" class="form__input" placeholder="+7-***-***-**-**" required>
+                <div class="form__description">* Обязательно для заполнения</div>
+            </div>
+            <div class="form__group">
+                <textarea name="comment" class="form__input" maxlength="400" placeholder="Комментарий"></textarea>
+            </div>
+            <button type="submit" class="feedback__button button">
+                <span class="button__gradient">Отправить</span>
+            </button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__group">
+                <h1 class="footer__title">О компании</h1>
+                <div class="footer__content">SDService - системная интеграция, внедрение IT - проектов под ключ</div>
+            </div>
+            <div class="footer__group">
+                <h1 class="footer__title">Режим работы</h1>
+                <div class="footer__content">
+                    <p class="info">Понедельник - Пятница</p>
+                    <p class="info">Рабочий день c 10:00 до 19:00</p>
+                    <p class="info">Суббота, Воскресенье: Выходной</p>
+                </div>
+            </div>
+            <div class="footer__group" id="contacts">
+                <h1 class="footer__title">Контакты</h1>
+                <div class="footer__content">
+                    <p class="info info_gradient">info@sdservice.kz</p>
+                    <p class="info">+7 (7172) 72-85-05</p>
+                    <p class="info">+7 (707) 845-66-94</p>
+                    <p class="info">г. Астана, пр Тауелсиздик 34</p>
+                </div>
+            </div>
+            <div class="footer__group footer__group_gradient">
+                <h1 class="footer__title">Интересное</h1>
+
+                <div class="footer__content">Фотоэкскурсия по московскому коворкингу #tceh</div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2012 - <span id="current_year">2018</span> «SD-Service» Все права защищены.
+        </div>
+    </div>
+    <button class="page-up">
+        <svg viewBox="0 0 100 100">
+            <path d="M 25 65 L 50 35 L 75 65" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+    <script src="./Scripts/main.js"></script>
+</body>
+</html>

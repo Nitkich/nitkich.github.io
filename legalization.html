@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SD-Service</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/legalization.css">
+    <link rel="stylesheet" href="./Styles/slider.css">
+	<link rel="icon" type="image/png" href="./Images/logocompany16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./Images/logocompany32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./Images/logocompany.png" sizes="96x96">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">SDService</h1>
+        <div class="header__button" id="toggle">
+            <svg viewBox="0 0 100 100">
+                <g fill="#fff">
+                    <circle cx="50" cy="25" r="5" />
+                    <circle cx="50" cy="50" r="5" />
+                    <circle cx="50" cy="75" r="5" />
+                </g>
+            </svg>
+        </div>
+        <nav class="header__nav nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="#" class="nav__link" data-id="contacts">Контакты</a>
+        </nav>
+    </header>
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__title">Легализация ПО</h1>
+            <div class="hero__content">Поможем выявить нелегальное ПО и произвести легализацию на выгодных условиях</div>
+            <button class="hero__button button" data-id="feedback">
+                <span class="button__gradient">Связаться</span>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__group">
+            <h1 class="content__title">Что такое легилазиция программного обеспечения?</h1>
+            <div class="content__text">
+                <p>Использование пиратского программного обеспечения в корпоративных нуждах дает лишь видимую экономию средств, которая неминуемо обернется огромными расходами, если не судебным процессом при ближайшей проверке инспектора. Избежать этого позволит легализация ПО, проводимая специализированными компаниями.</p>
+                <p>SD-Service предлагает комплексные услуги в легализации: от аудита до замены контрафактной продукции и оптимизации программного обеспечения. К вашим услугам опытная команда специалистов с соответствующим оборудованием и софтом.</p>
+                <p class="content__text_primary">Интересный факт: ежемесячно в России и Казахстане возбуждается до 200 уголовных дел касательно использования программного обеспечения, не имеющего официальной лицензии.</p>
+            </div>
+        </div>
+        <div class="content__group">
+            <h1 class="content__title">Легализация ПО: список этапов</h1>
+            <div class="content__text">
+                <ol class="content__list">
+                    <li>Аудит. Составляем перечень используемого ПО в организации как на персональных компьютерах, так и серверах;</li>
+                    <li>Определение степени необходимости программ и оценка их актуальности их версий;</li>
+                    <li>Выявление степени эффективности эксплуатации ПО, оптимизация продуктов и составление рекомендаций по улучшению: например, подбор более дешевой или даже бесплатной альтернативы;</li>
+                    <li>Определение количества необходимых лицензий;</li>
+                    <li>Легализация, проверка срока действия имеющихся лицензий. Учитываем возможные акции, предлагаемые правообладателем, будущие затраты на эксплуатацию и обновление на основании возможного расширения бизнеса;</li>
+                    <li>Внедрение системы учета программного обеспечения;</li>
+                </ol>
+                <p>По окончании процесса вы получите полностью лицензированное ПО, которое сведет к нулю риск судебного процесса и проблем с законом.</p>
+                <p class="content__text_primary">Интересный факт: эксплуатация недоброкачественного ПО, помимо проблем с авторским правом, сопряжена еще и с другими неудобствами. Например, ограниченный функционал, неудобство сотрудников из-за постоянных проблем и зависаний.</p>
+            </div>
+        </div>
+        <div class="content__group">
+            <h1 class="content__title">Наши преимущества</h1>
+            <div class="content__text">
+                <ul class="content__list">
+                    <li>Высокая степень ответственности: сотрудничаем с официальными правообладателями, заключаем официальный договор с заказчиками;</li>
+                    <li>Пунктуальность: гарантируем оперативное выполнение обязательств по легализации ПО;</li>
+                    <li>Более чем 10-летний опыт сотрудников, позволяющий нам подбирать оптимальные и эффективные решения.</li>
+                </ul>
+                <p>Позаботьтесь о легальности вашего бизнеса и минимизации возможных рисков – закажите легализацию ПО в компании SD-Service!</p>
+            </div>
+        </div>
+    </div>
+    <div class="feedback" id="feedback">
+        <h1 class="feedback__title">Получите бесплатную консультацию по услугам</h1>
+        <div class="feedback__description">Оставьте свои контактные данные и мы свяжемся с вами</div>
+        <form action="http://127.0.0.1:8080/" method="POST" class="feedback__form form">
+            <div class="form__group">
+                <input type="text" name="firstname" class="form__input" maxlength="50" placeholder="Имя *" required>
+                <input type="email" name="email" class="form__input" maxlength="50" placeholder="Почта">
+                <input type="text" name="organization_name" class="form__input" maxlength="50" placeholder="Название организации *" required>
+                <input type="tel" name="tel" class="form__input" placeholder="+7-***-***-**-**" required>
+                <div class="form__description">* Обязательно для заполнения</div>
+            </div>
+            <div class="form__group">
+                <textarea name="comment" class="form__input" maxlength="400" placeholder="Комментарий"></textarea>
+            </div>
+            <button type="submit" class="feedback__button button">
+                <span class="button__gradient">Отправить</span>
+            </button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__group">
+                <h1 class="footer__title">О компании</h1>
+                <div class="footer__content">SDService - системная интеграция, внедрение IT - проектов под ключ</div>
+            </div>
+            <div class="footer__group">
+                <h1 class="footer__title">Режим работы</h1>
+                <div class="footer__content">
+                    <p class="info">Понедельник - Пятница</p>
+                    <p class="info">Рабочий день c 10:00 до 19:00</p>
+                    <p class="info">Суббота, Воскресенье: Выходной</p>
+                </div>
+            </div>
+            <div class="footer__group" id="contacts">
+                <h1 class="footer__title">Контакты</h1>
+                <div class="footer__content">
+                    <p class="info info_gradient">info@sdservice.kz</p>
+                    <p class="info">+7 (7172) 72-85-05</p>
+                    <p class="info">+7 (707) 845-66-94</p>
+                    <p class="info">г. Астана, пр Тауелсиздик 34</p>
+                </div>
+            </div>
+            <div class="footer__group footer__group_gradient">
+                <h1 class="footer__title">Интересное</h1>
+
+                <div class="footer__content">Фотоэкскурсия по московскому коворкингу #tceh</div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2012 - <span id="current_year">2018</span> «SD-Service» Все права защищены.
+        </div>
+    </div>
+    <button class="page-up">
+        <svg viewBox="0 0 100 100">
+            <path d="M 25 65 L 50 35 L 75 65" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+    <script src="./Scripts/main.js"></script>
+</body>
+</html>

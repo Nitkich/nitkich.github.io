@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SD-Service</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/virtualization.css">
+    <link rel="stylesheet" href="./Styles/slider.css">
+	<link rel="icon" type="image/png" href="./Images/logocompany16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./Images/logocompany32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./Images/logocompany.png" sizes="96x96">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">SDService</h1>
+        <div class="header__button" id="toggle">
+            <svg viewBox="0 0 100 100">
+                <g fill="#fff">
+                    <circle cx="50" cy="25" r="5" />
+                    <circle cx="50" cy="50" r="5" />
+                    <circle cx="50" cy="75" r="5" />
+                </g>
+            </svg>
+        </div>
+        <nav class="header__nav nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="#" class="nav__link" data-id="contacts">Контакты</a>
+        </nav>
+    </header>
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__title">Виртуализация</h1>
+            <div class="hero__content">Внедряем виртуализацию на основе открытых решений KVM и LXC</div>
+            <button class="hero__button button" data-id="feedback">
+                <span class="button__gradient">Связаться</span>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__group">
+            <h1 class="content__title">Виртуализация ИТ инфраструктуры для бизнеса</h1>
+            <div class="content__text">
+			<p>Большинство серверов и ПК, функционирующих в рамках предприятия, будь то офис или производство, работают всего на 5-10% от своих возможностей. Все из-за большого количества физического оборудования, ресурс которого находится в простое подавляющее количество времени. Отсюда огромные расходы на электроэнергию, слабая эффективность, необходимость в большой площади для установки техники и развертке сложной системы кабелей.</p> 
+			<div class="content__text_primary">
+			<p>Компания SD-Service поможет максимизировать эффективность оборудования и создать общие ресурсы для множества виртуальных серверов. Предлагаем услуги виртуализации – технологии объединения серверов, сервисов, приложений и рабочих станций.</p>
+			<p>Грамотное решение виртуализации – тщательный анализ ресурсов предприятия, подбор оптимального количества хранилищ, гипервизоров (мониторов виртуальных машин) и серверов для рационального распределения ИТ - инфраструктуры. При этом виртуальный сервер размещается у компании - заказчика.</p>
+			<p>Компания SD-Service предлагает решения на основе продуктов VMWare, Citrix Xen, Proxmox VE, Linux Virtualization.</p>
+			</div>
+			</div>
+        </div>
+        <div class="content__group">
+            <h1 class="content__title">Что дает виртуализация бизнесу?</h1>
+            <div class="content__text">
+                <ul class="content__list">
+                    <li>Сокращение затрат на оборудование более чем в 2 раза;</li>
+                    <li>Повышение интенсивности эксплуатации техники и снижение простоев;</li>
+                    <li>Сокращение электропотребления как минимум на 60% и необходимую площадь для размещения техники;</li>
+                    <li>Сокращение расходов на лицензирование ПО, оборудование, обслуживание, обучение;</li>
+                    <li>Это упростит управление приложениями и настольными системами;</li>
+                    <li>Повышение уровня обслуживания;</li>
+                    <li>Обеспечение непрерывности работы оборудования и IT-инфраструктуры;</li>
+                    <li>Это предоставит дополнительную мощность для оперативного реагирования на изменение потребностей бизнеса;</li>
+                    <li>Повышение информационной безопасности за счет изолированности виртуальной среды;</li>
+                    <li>Сокращение расходов на содержание IT-инфраструктуры;</li>
+                </ul>
+            По окончанию внедрения виртуализации Вы получите виртуальную альтернативу физическому оборудованию, которая будет гораздо эффективнее и безопаснее работать.
+            </div>
+        </div>
+    </div>
+    <div class="feedback" id="feedback">
+        <h1 class="feedback__title">Получите бесплатную консультацию по услугам</h1>
+        <div class="feedback__description">Оставьте свои контактные данные и мы свяжемся с вами</div>
+        <form action="http://127.0.0.1:8080/" method="POST" class="feedback__form form">
+            <div class="form__group">
+                <input type="text" name="firstname" class="form__input" maxlength="50" placeholder="Имя *" required>
+                <input type="email" name="email" class="form__input" maxlength="50" placeholder="Почта">
+                <input type="text" name="organization_name" class="form__input" maxlength="50" placeholder="Название организации *" required>
+                <input type="tel" name="tel" class="form__input" placeholder="+7-***-***-**-**" required>
+                <div class="form__description">* Обязательно для заполнения</div>
+            </div>
+            <div class="form__group">
+                <textarea name="comment" class="form__input" maxlength="400" placeholder="Комментарий"></textarea>
+            </div>
+            <button type="submit" class="feedback__button button">
+                <span class="button__gradient">Отправить</span>
+            </button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__group">
+                <h1 class="footer__title">О компании</h1>
+                <div class="footer__content">SDService - системная интеграция, внедрение IT - проектов под ключ</div>
+            </div>
+            <div class="footer__group">
+                <h1 class="footer__title">Режим работы</h1>
+                <div class="footer__content">
+                    <p class="info">Понедельник - Пятница</p>
+                    <p class="info">Рабочий день c 10:00 до 19:00</p>
+                    <p class="info">Суббота, Воскресенье: Выходной</p>
+                </div>
+            </div>
+            <div class="footer__group" id="contacts">
+                <h1 class="footer__title">Контакты</h1>
+                <div class="footer__content">
+                    <p class="info info_gradient">info@sdservice.kz</p>
+                    <p class="info">+7 (7172) 72-85-05</p>
+                    <p class="info">+7 (707) 845-66-94</p>
+                    <p class="info">г. Астана, пр Тауелсиздик 34</p>
+                </div>
+            </div>
+            <div class="footer__group footer__group_gradient">
+                <h1 class="footer__title">Интересное</h1>
+
+                <div class="footer__content">Фотоэкскурсия по московскому коворкингу #tceh</div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2012 - <span id="current_year">2018</span> «SD-Service» Все права защищены.
+        </div>
+    </div>
+    <button class="page-up">
+        <svg viewBox="0 0 100 100">
+            <path d="M 25 65 L 50 35 L 75 65" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+    <script src="./Scripts/main.js"></script>
+</body>
+</html>
